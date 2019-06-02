@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/a1/CLionProjects/just_learning_cpp/08newdelete.cpp
+iostream
+-
+
+/Users/a1/CLionProjects/just_learning_cpp/main.cpp
+iostream
+-
+
