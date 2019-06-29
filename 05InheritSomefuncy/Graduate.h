@@ -1,0 +1,16 @@
+//
+// Created by xiaochen on 2019-06-26.
+//
+
+#ifndef INC_05INHERITSOMEFUNCY_GRADUATE_H
+#define INC_05INHERITSOMEFUNCY_GRADUATE_H
+
+
+
+class Graduate {
+
+};
+
+
+
+#endif //INC_05INHERITSOMEFUNCY_GRADUATE_H

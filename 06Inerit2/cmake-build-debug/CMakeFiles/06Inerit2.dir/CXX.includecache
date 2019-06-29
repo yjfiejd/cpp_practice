@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/a1/CLionProjects/06Inerit2/bed.h
+
+/Users/a1/CLionProjects/06Inerit2/sofa.h
+
+/Users/a1/CLionProjects/06Inerit2/sofabed.cpp
+sofabed.h
+/Users/a1/CLionProjects/06Inerit2/sofabed.h
+
+/Users/a1/CLionProjects/06Inerit2/sofabed.h
+sofa.h
+/Users/a1/CLionProjects/06Inerit2/sofa.h
+bed.h
+/Users/a1/CLionProjects/06Inerit2/bed.h
+
