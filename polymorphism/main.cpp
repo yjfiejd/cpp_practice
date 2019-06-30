@@ -19,6 +19,26 @@ using namespace std;
 // 3, 将子类对象地址 赋给 父类的指针，并发生虚函数调用
 
 
+
+// 声明虚函数的方法. virtual void func(); 声明型关键字
+// 覆写(override), 发生在父子类中，父类中的函数有virtual声明，子类中，同参，同名，同返回的函数（就是相同的函数），之间构成覆写
+// 重载(overload), 同一作用域中，函数名相同，参数列表不同。
+// shadow,  发生在父子类中的同名成员。
+
+
+// 之前提到的赋值兼容时候可以三种情况：
+// 1子类对象赋给父类的对象
+// 2子类对象赋给父类的引用
+// 3子类对象的地址赋给父类的指针
+
+//  多态这里只用第三种情况，指针
+
+
+
+// 覆写的函数，是不是一定同父类的访问方式一致，看子类的需求。
+
+
+
 //  父类
 class Shape
 {
@@ -79,9 +99,7 @@ private:
 
 
 
-
-
-int main() {
+int main1() {
 
     Circle c(1, 2, 3);
 
@@ -95,3 +113,44 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+#if 0
+// 其他扩展
+class A
+{
+public:
+    virtual void func()
+    {
+        cout << "aaaaaa"<< endl;
+    }
+};
+
+class B:public A  // 别看B中啥没有，其实它继承了A中的 virtual void func()
+{
+
+};
+
+class C:public B
+{
+public:
+    virtual void func()
+    {
+        cout << "cccccc" << endl;
+    }
+};
+
+int main()
+{
+    C c;
+    A *pa = &c;
+    pa ->func();  // 结果是：cccccc
+}
+#endif;
+
+
+
+
